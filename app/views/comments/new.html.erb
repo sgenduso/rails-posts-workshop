@@ -1,0 +1,9 @@
+COMMENTING ON <%= @post.title %>
+
+<%= form_for [@post, @comment] do |f|  %>
+<p>
+  <%= f.label :comment, class: 'form-label' %>
+  <%= f.text_area :comment %>
+</p>
+  <%= f.submit %>
+<% end %>
