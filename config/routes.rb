@@ -17,6 +17,10 @@ Rails.application.routes.draw do
       resources :comments
     end
 
+    get '/login' => 'sessions#new'
+    post '/login' => 'sessions#create'
+    get '/logout' => 'sessions#destroy'
+
     get '/signup' => 'authentications#new'
     post '/signup' => 'authentications#create'
 

@@ -15,7 +15,11 @@
       <a class="navbar-brand" href="#">
         g  |  Reddit
       </a>
+      <% if current_user %>
+        Signed in as <%= current_user.username %> | <%= link_to "Logout", '/logout' %>
+      <% end %>
       <%= link_to "Sign Up", signup_path %>
+      <%= link_to "Log In", login_path %>
     </div>
   </div>
 </nav>
