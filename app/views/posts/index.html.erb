@@ -3,22 +3,22 @@
 <%= link_to "New Post", new_post_path %>
 
 <% @posts.each do |post| %>
-<ul>
-  <li>
-    <!-- <a href='/posts/'+post.id> Edit Post -->
-    <%= link_to post.author, post_path(post) %>
-  </li>
-  <!-- <li>
-    <%= post.author %>
-  </li> -->
-  <li>
-    <%= post.title %>
-  </li>
-  <li>
-    <%= post.body %>
-  </li>
-  <li>
-    <%= post.id %>
-  </li>
-</ul>
+<div class='panel panel-default'>
+  <div class='panel body'>
+      <!-- <a href='/posts/'+post.id> Edit Post -->
+      <p>
+        <%= link_to post.author, post_path(post) %>
+      </p>
+    <!-- <li>
+      <%= post.author %>
+    </li> -->
+      <p>
+        <%= post.title %>
+      </p>
+      <p>
+        <%= post.body %>
+      </p>
+    </div>
+  </div>
+      <!-- <%= post.id %> -->
 <% end %>

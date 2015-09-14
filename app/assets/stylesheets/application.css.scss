@@ -14,7 +14,18 @@
  *= require_self
  */
 
-.form-label {
-  display: inline-block;
-  width: 100px;
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body{
+  padding: 20px;
+}
+
+.form-horizontal {
+  width: 50%;
+}
+
+.comments {
+  width: 50%;
+  margin-left: 40px;
 }

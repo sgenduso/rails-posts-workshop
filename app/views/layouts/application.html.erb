@@ -7,8 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class='container'>
+  <!-- <div class='jumbotron'> -->
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        g  |  Reddit
+      </a>
+      <%= link_to "Sign Up", signup_path %>
+    </div>
+  </div>
+</nav>
+  <!-- </div> -->
 <%= yield %>
-
+</div>
 </body>
 </html>
